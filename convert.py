@@ -22,10 +22,10 @@ def convert_temp(unit_in, unit_out, temp):
       return f"Invalid unit {unit_out}"
     
     if unit_in == "f" and unit_out == "c":
-      temp = (temp - 32) * 5/9
+      temp = (temp - 32) * 9/5
     
     if unit_in == "c" and unit_out == "f":
-      temp = (temp * 9/5) + 32
+      temp = (temp * 5/9) + 32
     
     return f"{temp}{unit_out}"
 
